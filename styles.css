@@ -1,0 +1,95 @@
+/* Estilos globales */
+body {
+    font-family: 'Arial', sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fafafa;
+    /* Fondo más claro */
+    color: #333;
+    /* Texto más oscuro para mejor legibilidad */
+}
+
+/* Formulario del producto */
+#productForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#productName {
+    flex-grow: 1;
+    padding: 10px;
+    /* Mejora la accesibilidad con más espacio */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Lista de productos */
+#productsList {
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #fff;
+    /* Fondo blanco para resaltar los productos */
+    border-radius: 8px;
+}
+
+/* Item del producto */
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera para mejorar visibilidad */
+    transition: background-color 0.3s ease;
+    /* Transición para hover */
+}
+
+.product-item:hover {
+    background-color: #e0e0e0;
+    /* Efecto hover para mejorar interactividad */
+}
+
+/* Botón del producto */
+.product-item button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Transición en hover */
+}
+
+.product-item button:hover {
+    background-color: #0056b3;
+    /* Efecto hover en botones */
+}
+
+/* Media Queries para mejor responsividad */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    #productForm {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .product-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-item button {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
